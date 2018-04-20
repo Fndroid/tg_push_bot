@@ -1,6 +1,8 @@
 # Telegram Push Notifications Bot Update Log
 TG推送机器人更新日志
 
+[点击添加Bot](https://t.me/notificationme_bot)
+
 ### 2018.04.20
 
 1. 增加POST请求支持，接受格式为``JSON``或``x-www-form-urlencoded``
