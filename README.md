@@ -4,4 +4,4 @@
 ### 2018.04.20
 
 1. 增加POST请求支持
-2. 增加属性parse_mode、reply_markup和disable_web_page_preview设置
+2. 增加属性parse_mode、reply_markup和disable_web_page_preview设置，具体参考：[Telegram Bot API](https://core.telegram.org/bots/api#sendmessage)
