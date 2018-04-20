@@ -1,5 +1,5 @@
 # Telegram Push Notifications Bot Update Log
-更新日志
+TG推送机器人更新日志
 
 ### 2018.04.20
 
