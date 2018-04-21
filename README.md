@@ -3,7 +3,7 @@ TG推送机器人更新日志
 
 [添加Bot](https://t.me/notificationme_bot) [示例](https://github.com/Fndroid/tg_push_bot/tree/master/examples)
 
-### 使用
+### 推送消息
 
 ```
 // using get
