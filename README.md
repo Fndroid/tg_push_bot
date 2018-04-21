@@ -1,9 +1,20 @@
 # Telegram Push Notifications Bot Update Log
 TG推送机器人更新日志
 
-[点击添加Bot](https://t.me/notificationme_bot)
+[添加Bot](https://t.me/notificationme_bot) [示例](https://github.com/Fndroid/tg_push_bot/tree/master/examples)
 
-[示例](https://github.com/Fndroid/tg_push_bot/tree/master/examples)
+### 使用
+
+```
+// using get
+curl -X GET https://tgbot.lbyczf.com/sendMessage/:Token?text=HelloWorld
+
+// using post
+curl -d "text=Helloworld&photo=https%3A%2F%2Fgithub.com%2FFndroid%2Ftg_push_bot%2Fblob%2Fmaster%2Fimgs%2Fphoto_2018-04-21_15-29-55.jpg%3Fraw%3Dtrue" -X POST https://tgbot.lbyczf.com/sendMessage/:Token
+```
+
+| GET调用的URL长度会有限制，所以如果要发送图片或者发送内容较长，请使用POST
+
 
 ### 2018.04.20
 
