@@ -19,6 +19,21 @@ curl -d "text=Helloworld&photo=https%3A%2F%2Fgithub.com%2FFndroid%2Ftg_push_bot%
 
 > GET调用的URL长度会有限制，所以如果要发送图片或者发送内容较长，请使用POST
 
+### 字段解释
+
+参数|类型|必须|说明
+-|-|-|-
+text|String|True|发送的文字内容
+photo|URL String|False|发送的图片地址，仅支持HTTPS
+parse_mode|String|False|发送文字内容的样式，可以是Markdown或HTML
+reply_markup|JSON String|False|用于控制消息底下的操作按钮
+disable_web_page_preview|Boolean|False|控制是否展示链接的卡片
+disable_notification|Boolean|False|控制是否发送通知
+
+> reply_markup可以参考：[Telegram Bot API](https://core.telegram.org/bots/api#sendmessage)
+
+> 当photo存在时，text不必须存在（即可以单独发送图片）
+
 ### 隐私相关
 
 Bot不会识别和储存任何用户推送的消息，只会将推送消息发送给Telegram服务器。Bot只会记录用户回话ID，此ID是向Telegram推送消息的凭据。
