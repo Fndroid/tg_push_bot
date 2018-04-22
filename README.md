@@ -3,6 +3,8 @@ TG推送机器人更新日志
 
 [点我添加Bot](https://t.me/notificationme_bot) 
 
+[Chrome插件](https://github.com/Fndroid/tg_notification_chrome)
+
 ### 推送消息
 
 
@@ -35,6 +37,10 @@ Bot不会识别和储存任何用户推送的消息，只会将推送消息发�
 #### 2018.04.21
 
 1. 支持属性``disable_notification``，可以静默发送消息，采集记录用途
+
+#### 2018.04.22
+
+1. 增加Chrome插件支持，可以通过插件向Telegram推送图片、链接和文字内容，具体参考：[TG推送插件](https://github.com/Fndroid/tg_notification_chrome)
 
 ### 感谢支持
 ![感谢](https://raw.githubusercontent.com/Fndroid/jsbox_script/master/imgs/thankyou.jpg)
