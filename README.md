@@ -26,7 +26,7 @@ curl -d "text=Helloworld&photo=https%3A%2F%2Fgithub.com%2FFndroid%2Ftg_push_bot%
 参数|类型|必须|说明
 -|-|-|-
 text|String|True|发送的文字内容
-photo|URL String|False|发送的图片地址，仅支持HTTPS
+photo|URL String|False|发送的图片地址，支持HTTPS/HTTP
 parse_mode|String|False|发送文字内容的样式，可以是Markdown或HTML
 reply_markup|JSON String|False|用于控制消息底下的操作按钮
 disable_web_page_preview|Boolean|False|控制是否展示链接的卡片
