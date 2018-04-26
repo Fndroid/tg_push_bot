@@ -57,5 +57,9 @@ Bot不会识别和储存任何用户推送的消息，只会将推送消息发�
 
 1. 增加Chrome插件支持，可以通过插件向Telegram推送图片、链接和文字内容，具体参考：[TG推送插件](https://github.com/Fndroid/tg_notification_chrome)
 
+#### 2018.04.26
+
+1. 给Telegram X增加一个推送非HTTP(S)链接的折中方法，将链接URL编码后链接到``https://tgbot.lbyczf.com/redirectTo?url=``后，在Telegram X打开后会重定向
+
 ### 感谢支持
 ![感谢](https://raw.githubusercontent.com/Fndroid/jsbox_script/master/imgs/thankyou.jpg)
