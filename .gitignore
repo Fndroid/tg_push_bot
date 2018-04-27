@@ -1,0 +1,7 @@
+config.js
+static/
+notifier.js
+node_modules
+*.crt
+*.key
+*.db
