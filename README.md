@@ -65,6 +65,10 @@ Bot不会识别和储存任何用户推送的消息，只会将推送消息发�
 
 1. 给Telegram X增加一个推送非HTTP(S)链接的折中方法，将链接URL编码后链接到``https://tgbot.lbyczf.com/redirectTo?url=``后，在Telegram X打开后会重定向
 
+#### 2018.04.27
+
+1. 代码已经上传，可以参考[配置说明](SETUP.md)在自己的VPS/ECS上搭建Bot后台
+
 
 ### 感谢支持
 ![感谢](https://raw.githubusercontent.com/Fndroid/jsbox_script/master/imgs/thankyou.jpg)
