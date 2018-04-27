@@ -1,4 +1,12 @@
-## 如何在ECS/VPS上使用
+## 如何在ECS/VPS上搭建Bot Server
+
+### 下载/Clone仓库代码
+
+```
+git clone https://github.com/Fndroid/tg_push_bot.git
+
+cd tg_push_bot
+```
 
 ### 创建Sqlite3数据库 bot.db
 
