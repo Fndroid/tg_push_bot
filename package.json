@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Fndroid",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
