@@ -3,6 +3,8 @@ TG推送机器人更新日志
 
 [点我添加Bot](https://t.me/notificationme_bot) 
 
+[在VPS/ECS上搭建Bot Server](SETUP.md)
+
 [Chrome插件](https://github.com/Fndroid/tg_notification_chrome)
 
 ### 推送消息
