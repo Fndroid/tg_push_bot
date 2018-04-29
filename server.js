@@ -130,7 +130,10 @@ app.post('/sendMessage/:token', (req, resp) => {
         if (!error) {
             sendResponse(row.chatId, req.body.text, req.body.parse_mode, req.body.reply_markup, req.body.disable_web_page_preview, req.body.photo, req.body.disable_notification, (res) => {
                 let respData = {
-                    result: res
+                    result: {
+						body: res.body,
+						statusCode: res.statusCode
+					}
                 }
                 resp.json(respData)
             })
@@ -148,7 +151,10 @@ app.get('/sendMessage/:token', (req, resp) => {
         if (!error) {
             sendResponse(row.chatId, req.query.text, req.query.parse_mode, req.query.reply_markup, req.query.disable_web_page_preview, req.query.photo, req.query.disable_notification, (res) => {
                 let respData = {
-                    result: res
+                    result: {
+						body: res.body,
+						statusCode: res.statusCode
+					}
                 }
                 resp.json(respData)
             })
