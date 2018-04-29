@@ -3,6 +3,8 @@ TG推送机器人更新日志
 
 [点我添加Bot](https://t.me/notificationme_bot) 
 
+[在VPS/ECS上搭建Bot Server](SETUP.md)
+
 [Chrome插件](https://github.com/Fndroid/tg_notification_chrome)
 
 ### 推送消息
@@ -64,6 +66,10 @@ Bot不会识别和储存任何用户推送的消息，只会将推送消息发�
 #### 2018.04.26
 
 1. 给Telegram X增加一个推送非HTTP(S)链接的折中方法，将链接URL编码后链接到``https://tgbot.lbyczf.com/redirectTo?url=``后，在Telegram X打开后会重定向
+
+#### 2018.04.27
+
+1. 代码已经上传，可以参考[配置说明](SETUP.md)在自己的VPS/ECS上搭建Bot后台
 
 
 ### 感谢支持
