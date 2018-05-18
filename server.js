@@ -8,6 +8,7 @@ const uniqid = require('uniqid')
 const sqlite3 = require('sqlite3')
 const util = require('util')
 const config = require('./config')
+const path = require('path')
 
 const privateKey = fs.readFileSync(config.https.privateKey, 'utf8')
 const certificate = fs.readFileSync(config.https.certificate, 'utf8')
@@ -109,7 +110,7 @@ app.post('/inlineQuery', (req, resp) => {
                 return genUserToken(uid)
             }
         }).then(token => {
-            sendResponse(uid, util.format(hintText, token), 'Markdown', undefined, tru)
+            sendResponse(uid, util.format(hintText, token), 'Markdown', undefined, true)
         }).catch((error) => {
             console.log(error)
         })
@@ -173,6 +174,19 @@ app.get('/', (req, resp) => {
 
 app.get('/redirectTo', (req, resp) => {
 	resp.redirect(req.query.url)
+})
+
+app.get('/rulesets/smart/', (req, resp) => {
+	console.log(req.url);
+	let confFile = path.join(__dirname, 'potatso.json');
+    fs.createReadStream(confFile).pipe(resp);
+})
+
+app.post('/rulesets/update/', (req, resp) => {
+	resp.json({
+		"status": 0,
+		"data": []
+	})
 })
 
 const httpsServer = https.createServer({
