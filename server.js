@@ -195,5 +195,5 @@ const httpsServer = https.createServer({
 }, app)
 
 httpsServer.listen(443, config.https.domain, () => {
-    console.log('listening on port 433')
+    console.log('listening on port 443')
 })
